@@ -1,8 +1,6 @@
 package seleintroduction;
-
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,9 +10,8 @@ import org.testng.Assert;
 
 public class dropDowns {
 
-	public static void main(String[] args) throws InterruptedException {
-		
-		
+	public static void main(String[] args) throws InterruptedException 
+	{	
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 //dropdown with select tag. Here we are selecting dropdown from options present (STATIC)
@@ -46,28 +43,21 @@ public class dropDowns {
 		driver.findElement(By.id("btnclosepaxoption")).click();
 		Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
 		System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
-		
-		
+			
 // Dropdown with dynamic other dropdown Dynamic dropdown
-		
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 		driver.findElement(By.xpath("//a[@value='BLR']")).click();
 		driver.findElement(By.xpath("//a[@value='MAA']")).click();
 		Thread.sleep(2000);
-		
-		
-//Calender selection
-		
-		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-hover")).click();
-		
-		//check round trip radio button
-		
-		//DO NOT USE  As it doest work with many browsers -- System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
+				
+//Calender selection		
+		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-hover")).click();	
+//		check round trip radio button	
+//		DO NOT USE  As it doest work with many browsers -- System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
 //		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 //		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
 //		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
-
-		//DO NOT USE  As it doest work with many browsers -- System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
+//		DO NOT USE  As it doest work with many browsers -- System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
 //		if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1"))
 //		{
 //			System.out.println("Its Enabled");
@@ -77,13 +67,9 @@ public class dropDowns {
 //		{
 //			Assert.assertTrue(false);
 //		}
-//		
-		
-			
-
-		//driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
-		//driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
-		//driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
+//		driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+//		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
+//		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
 		
 // Suggestive xpath example
 		driver.findElement(By.id("autosuggest")).sendKeys("ind");
@@ -99,27 +85,16 @@ public class dropDowns {
 		}
 		}
 		
-//Checkbox example
-		
-		
+//Checkbox example	
 		Assert.assertFalse(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
 		driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).click();
-		Assert.assertTrue(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
-		
+		Assert.assertTrue(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());	
 
 //Find all checkboxes on page
 		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 		
 //Search the desired flight
 		driver.findElement(By.name("ctl00$mainContent$btn_FindFlights")).click();
-		
-		
-
-		//driver.close();
-		
-		
-		
-
+		driver.close();
 	}
-
 }
