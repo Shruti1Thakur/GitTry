@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Regression">
+	<groups>
+		<run>
+			<include name="SmokeTest"/> 
+			<!-- Same can be done for exclude as well -->
+		</run>
+	</groups>
+    <classes>
+      <class name="test.TestNGBasics"/>
+      <class name="test.Basics2"/>
+      <class name="test.Basics3"/>
+      <class name="test.Basics4"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

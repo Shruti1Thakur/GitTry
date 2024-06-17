@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="12" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-04T12:54:19 IST" name="Suite" finished-at="2024-06-04T12:54:19 IST" duration-ms="50">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="Basics4.APILoginhome()[pri:0, instance:test.Basics4@2ea41516]" name="APILoginhome" class="test.Basics4"/>
+        <method signature="Basics3.WebLogin()[pri:0, instance:test.Basics3@6e0f5f7f]" name="WebLogin" class="test.Basics3"/>
+      </group> <!-- SmokeTest -->
+    </groups>
+    <test started-at="2024-06-04T12:54:19 IST" name="Test" finished-at="2024-06-04T12:54:19 IST" duration-ms="28">
+      <class name="test.TestNGBasics">
+        <test-method signature="Demo()[pri:0, instance:test.TestNGBasics@5fd4f8f5]" started-at="2024-06-04T12:54:19 IST" name="Demo" finished-at="2024-06-04T12:54:19 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+      </class> <!-- test.TestNGBasics -->
+      <class name="test.Basics2">
+        <test-method is-config="true" signature="Demo1()[pri:0, instance:test.Basics2@3e84448c]" started-at="2024-06-04T12:54:19 IST" name="Demo1" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo1 -->
+        <test-method is-config="true" signature="Demo()[pri:0, instance:test.Basics2@3e84448c]" started-at="2024-06-04T12:54:19 IST" name="Demo" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+      </class> <!-- test.Basics2 -->
+    </test> <!-- Test -->
+    <test started-at="2024-06-04T12:54:19 IST" name="Test2" finished-at="2024-06-04T12:54:19 IST" duration-ms="50">
+      <class name="test.Basics3">
+        <test-method is-config="true" signature="TabLogin()[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:18 IST" name="TabLogin" finished-at="2024-06-04T12:54:18 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TabLogin -->
+        <test-method is-config="true" signature="BeforClass()[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:19 IST" name="BeforClass" finished-at="2024-06-04T12:54:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforClass -->
+        <test-method signature="WebAPILogin(java.lang.String,java.lang.String)[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:19 IST" name="WebAPILogin" data-provider="getData" finished-at="2024-06-04T12:54:19 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebAPILogin -->
+        <test-method signature="WebAPILogin(java.lang.String,java.lang.String)[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:19 IST" name="WebAPILogin" data-provider="getData" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2ndusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebAPILogin -->
+        <test-method signature="WebAPILogin(java.lang.String,java.lang.String)[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:19 IST" name="WebAPILogin" data-provider="getData" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3rdusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebAPILogin -->
+        <test-method signature="WebLogin()[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:19 IST" name="WebLogin" finished-at="2024-06-04T12:54:19 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at test.Basics3.WebLogin(Basics3.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogin -->
+        <test-method signature="APILogin()[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:19 IST" name="APILogin" finished-at="2024-06-04T12:54:19 IST" depends-on-methods="test.Basics3.WebAPILogin" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APILogin -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:test.Basics3@6e0f5f7f]" started-at="2024-06-04T12:54:19 IST" name="AfterClass" finished-at="2024-06-04T12:54:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- test.Basics3 -->
+      <class name="test.Basics4">
+        <test-method is-config="true" signature="Beforeeveryclass()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="Beforeeveryclass" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforeeveryclass -->
+        <test-method signature="APILoginhome()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="APILoginhome" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APILoginhome -->
+        <test-method is-config="true" signature="Beforeeveryclass()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="Beforeeveryclass" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforeeveryclass -->
+        <test-method is-config="true" signature="Aftereveryclass()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="Aftereveryclass" finished-at="2024-06-04T12:54:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftereveryclass -->
+        <test-method signature="MobileLoginhome()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="MobileLoginhome" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginhome -->
+        <test-method is-config="true" signature="Aftereveryclass()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="Aftereveryclass" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftereveryclass -->
+        <test-method is-config="true" signature="Beforeeveryclass()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="Beforeeveryclass" finished-at="2024-06-04T12:54:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforeeveryclass -->
+        <test-method signature="WebLoginhome()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="WebLoginhome" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginhome -->
+        <test-method is-config="true" signature="Aftereveryclass()[pri:0, instance:test.Basics4@2ea41516]" started-at="2024-06-04T12:54:19 IST" name="Aftereveryclass" finished-at="2024-06-04T12:54:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftereveryclass -->
+      </class> <!-- test.Basics4 -->
+      <class name="test.Basics2">
+        <test-method is-config="true" signature="TabLogin()[pri:0, instance:test.Basics2@3e84448c]" started-at="2024-06-04T12:54:21 IST" name="TabLogin" finished-at="2024-06-04T12:54:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TabLogin -->
+      </class> <!-- test.Basics2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
