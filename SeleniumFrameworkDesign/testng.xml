@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">      <!-- parallel run of tests --> 
+<listeners>
+	
+	<listener class-name="SeleniumFrameworkBaics.TestComponents.Listeners"></listener>
+</listeners>
+
+    
+  <test thread-count="5" name="SubmitOrder">
+    <classes>
+      <class name="SeleniumFrameworkBaics.SubmitOrderTest"/> <!-- threadcount is set for how many browsers at a time is triggered -->
+    </classes>
+     </test> <!-- Test -->
+     <test thread-count="5" name="ErrorValidations"> <!-- groups in method -->
+    <classes>
+      <class name="SeleniumFrameworkBaics.ErrorValidations"/>
+    </classes>
+     </test> <!-- Test -->
+     <test thread-count="5" name="StandAloneTest">
+    <classes>
+      <class name="SeleniumFrameworkBaics.StandAloneTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
